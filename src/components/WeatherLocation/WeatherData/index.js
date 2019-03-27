@@ -5,14 +5,14 @@ import WeatherTemperature from './WeatherTemperature'
 import './styles.css'
 
 
-import{
+/* import{
     CLOUD,
     CLOUDY,
     RAIN,
     SNOW,
     SUN,
     WINDY,
-}from './../../../constants/weathers';
+}from './../../../constants/weathers'; */
 
 
 const WeatherData = ({data : {temperature, weatherState, humidity, wind}})=>(
@@ -26,7 +26,7 @@ const WeatherData = ({data : {temperature, weatherState, humidity, wind}})=>(
 )
 WeatherData.propTypes = {
     data : PropTypes.shape({
-        temperature: PropTypes.string.isRequired,
+        temperature: PropTypes.number.isRequired,
         weatherState: PropTypes.string.isRequired,
         humidity:PropTypes.number.isRequired,
         wind: PropTypes.string.isRequired,
