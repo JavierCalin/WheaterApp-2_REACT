@@ -19,15 +19,13 @@ class WeatherLocation extends Component {
             city,
             data : null
         }
-        console.log("constructor")
     }
     
     componentDidMount() {
         this.handleUpdateClick()
     }
     
-    componentDidUpdate(prevProps, prevState) {
-        console.log("componentDidUpdate")                
+    componentDidUpdate(prevProps, prevState) {            
     }
 
     handleUpdateClick = ()=>{
